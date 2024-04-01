@@ -1,0 +1,12 @@
+<div class="carousel">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let data of carouselData">
+      <div class="wrapper">
+        <img [src]="data.image" [alt]="data.path" class="img-fluid"  >
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+
+

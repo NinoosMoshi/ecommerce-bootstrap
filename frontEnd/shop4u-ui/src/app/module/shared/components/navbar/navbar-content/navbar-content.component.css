@@ -1,0 +1,25 @@
+.content {
+  width: 100%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.text-color {
+  color: gray;
+  font-weight: 600;
+}
+
+.navbar-content-form {
+  margin-top: 69px;
+
+}
+
+.mat-mdc-button.mat-unthemed {
+  color: rgb(198, 195, 195);
+}
+
+
+

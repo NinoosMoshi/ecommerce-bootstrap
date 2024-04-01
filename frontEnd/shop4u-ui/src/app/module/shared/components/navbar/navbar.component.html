@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Shop4U</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Men</a>
+        </li> -->
+        <li class="nav-item">
+          <button class="open-button" mat-button (click)="openNavbarContent('men')">Men</button>
+        </li>
+
+        <li class="nav-item">
+          <button class="open-button" mat-button (click)="openNavbarContent('women')">Women</button>
+        </li>
+      </ul>
+
+      <div class="login-logout">
+        <button (click)="navigateTo('cart')" mat-icon-button class="cart-icon">
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <button *ngIf="false" class="btn-auth" mat-raised-button color="primary">Login</button>
+
+        <button mat-button [matMenuTriggerFor]="menu">
+          <img
+            class="profile-img rounded-circle "
+            src="https://cdn.pixabay.com/photo/2023/08/02/23/36/ai-generated-8166028_640.jpg"
+            alt="profile"
+          />
+        </button>
+
+          <mat-menu #menu="matMenu" class="mat-menu">
+            <button mat-menu-item>Profile</button>
+            <button  mat-menu-item>Orders</button>
+            <button   mat-menu-item>Admin Dashboard</button>
+            <button class="btn-auth" mat-raised-button color="warn">Logout</button>
+          </mat-menu>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- content -->
+<div>
+  <div *ngIf="isNavbarContentOpen" class="modal-container">
+    <app-navbar-content [selectedSection]="currentSection" />
+  </div>
+</div>
+
+

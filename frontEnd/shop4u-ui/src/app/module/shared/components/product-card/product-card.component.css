@@ -1,0 +1,16 @@
+.card-price .first{
+  font-weight: 500;
+}
+
+.card-price .second{
+  color: gray;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+img {
+  height: 200px;
+}
+

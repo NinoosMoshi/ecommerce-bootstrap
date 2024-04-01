@@ -1,0 +1,32 @@
+.btn-auth {
+  margin: 3px;
+  padding: 0 10px;
+}
+
+.cart-icon {
+  color: white;
+}
+
+
+
+.login-logout {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item button {
+  color: white;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.mat-mdc-menu-content{
+  margin-top: 20px;
+}
+
+
+
